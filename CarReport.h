@@ -14,14 +14,6 @@ class Reports{
         string location;
 };
 
-bool isInteger(const string &str)
-{
-    istringstream ss(str);
-    int n;
-    ss >> n;
-    return !ss.fail() && ss.eof();
-}
-
 class CarReportDetails{
     public:
         CarReportDetails(vector<Reports>& reports){
